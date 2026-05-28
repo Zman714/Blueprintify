@@ -1,19 +1,12 @@
 # Blueprintify
 
-A Starsector mod workspace for automatically generating ship blueprint cargo items for hulls without data-folder blueprints.
+A Starsector mod that automatically adds blueprints for ships that don't have them.
+There are two modes, full mode and cleanup mode
 
-## Workspace structure
+## Cleanup Mode: the default
+picks up any missing blueprints from mods that don't direclty allign their ship hulls with a faction. there is filtering so that only actual ship hulls are added, no stations, modules, or drones/fighters hulls are added as ship blueprints in this manner.
+    Fighter wing and weapon blueprints also follow this same filtering system.
 
-- `src/` - Java source files
-- `bin/` - compiled classes
-- `jars/` - packaged mod jar output
-- `data/` - mod data files
-- `.vscode/` - editor settings and build tasks
-
-## Build
-
-Use the VS Code task `Build Blueprintify` to compile and package the mod jar.
-
-## Versioning
-
-Use the `Update Version` task to bump `mod_info.json` and append a changelog entry.
+## Full mode
+Makes everything blueprintable, with heavy gating. Any ship you acquire will be added to the blueprint loot pool, some ships are added when you first encounter an entity faction with no markets, such as the remnant.
+    Fighter wings and weapon blueprints are immediately added to the drop pool once you encounter their specific faction in combat.
