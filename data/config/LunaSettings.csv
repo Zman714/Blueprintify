@@ -1,0 +1,4 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+blueprintify_header,Blueprintify,Header,Blueprintify,,,,,
+blueprintify_fullMode,Full Mode,Boolean,false,,"Full Mode: if you acquire it, you can find the blueprint for it. Entity ships (Remnant, Omega, etc.), quest/unique ships, and other restricted hulls enter the drop pool once you own one. Weapons and fighters from entity factions are unlocked after fighting that faction in combat. Cleanup Mode (default, off): only adds blueprints for items not claimed by any faction, catching modded content with missing faction assignments.",,,
+blueprintify_intelNote,Blueprint List,Text,"Open the Intel screen (default E) and look for the Blueprintify entry to see which blueprints have been added to drop pools.",,,,,

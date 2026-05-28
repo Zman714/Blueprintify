@@ -1,0 +1,9 @@
+# Starsector proprietary API jars (players get these from their game installation)
+jars/starfarer.api.jar
+jars/starfarer_obf.jar
+
+# Compiled class files (mod is loaded via Blueprintify.jar, not loose .class files)
+bin/
+
+# Local dev config
+.vscode/

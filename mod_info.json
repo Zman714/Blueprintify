@@ -1,0 +1,18 @@
+{
+  "id": "blueprintify",
+  "name": "Blueprintify",
+  "author": "Zman147",
+  "version": "0.1.0",
+  "description": "Automatically creates ship blueprint cargo items for hulls missing data-folder blueprints.",
+  "gameVersion": "0.98a",
+  "jars": [
+    "jars/Blueprintify.jar"
+  ],
+  "modPlugin": "data.plugins.BlueprintifyModPlugin",
+  "dependencies": [
+    {
+      "id": "lunalib",
+      "name": "LunaLib"
+    }
+  ]
+}
