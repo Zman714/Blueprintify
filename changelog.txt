@@ -1,3 +1,6 @@
+V1.0
+    Initial release
+
 V0.1.0
     Initial workspace setup
 
