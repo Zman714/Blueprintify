@@ -1,0 +1,32 @@
+[center][size=18pt][b]Blueprintify[/b][/size]
+[i]Because every ship deserves a chance to be reproduced.[/i][/center]
+[center][url=https://github.com/Zman714/Blueprintify/releases/latest]Download[/url][/center]
+
+[center]([url=https://fractalsoftworks.com/forum/index.php?topic=26658.0]Requires LunaLib[/url])[/center]
+
+[hr]
+
+Ever install a mod full of cool ships, only to find none of them ever show up as blueprints? Your salvagers scour the sector and come up empty-handed. Your engineers stare blankly at hulls they'll never get to build. Blueprintify fixes that.
+
+This mod automatically generates ship blueprints for any hull that doesn't already have one defined in the data folder — filling the gaps left behind by mods that don't bother wiring their ships into the blueprint system.
+
+[hr]
+
+[size=14pt][b]Modes[/b][/size]
+
+[b]Cleanup Mode[/b] [i](Default)[/i]
+
+The sensible option. Blueprintify scans for ships from mods that haven't been properly assigned to a faction blueprint pool and quietly fills in the blanks. It's smart about what it picks up — only actual ship hulls make the cut. Stations, modules, drone hulls, and fighter frames are all filtered out and left alone.
+
+Fighter wing and weapon blueprints follow the same filtering logic, so you won't end up with a cluttered, nonsensical loot table.
+
+[b]Full Mode[/b]
+
+For those who want everything. Any ship hull you encounter becomes blueprintable, gated appropriately so it doesn't flood your early game. Ships tied to factions with no markets — the Remnants, for example — are added to the pool the moment you first encounter that faction. Fighter wings and weapons unlock the same way, dropping into the loot pool once you've made contact with their faction in combat.
+
+[hr]
+
+[size=10pt]Made by Zman147.[/size]
+
+
+

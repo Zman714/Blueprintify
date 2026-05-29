@@ -1,3 +1,8 @@
+V1.1
+    Debug menu added
+    UI Fixes
+    Added skin support so P, LP, XIV, and any other class variants got blueprinted as well.
+
 V1.0
     Initial release
 
