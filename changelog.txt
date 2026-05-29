@@ -1,3 +1,6 @@
+V1.1a
+    Found a little oopsy in the code that broke my mod... won't crash any games, just wouldn't work right.
+
 V1.1
     Debug menu added
     UI Fixes

@@ -71,7 +71,7 @@ public class BlueprintifyOwnershipScript implements EveryFrameScript {
         for (FleetMemberAPI member : members) {
             if (member.isFighterWing()) continue;
             ShipHullSpecAPI spec = member.getHullSpec();
-            if (spec == null || !spec.isBaseHull()) continue;
+            if (spec == null || spec.isDHull()) continue;
             memory.set("$blueprintify_seen_" + spec.getHullId(), true);
         }
     }

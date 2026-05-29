@@ -16,8 +16,8 @@ import java.util.*;
 
 public class BlueprintifyModPlugin extends BaseModPlugin {
 
-    // Held so the intel can trigger a mid-game recompute when the Debug tab is opened.
     static BlueprintifyModPlugin INSTANCE;
+    private BlueprintifyOwnershipScript ownershipScript;
 
     private static final Map<String, String> ENCOUNTER_FLAGS = new HashMap<>();
     static {
@@ -31,7 +31,7 @@ public class BlueprintifyModPlugin extends BaseModPlugin {
         INSTANCE = this;
 
         Global.getSector().addListener(new BlueprintifyEncounterListener(false));
-        BlueprintifyOwnershipScript ownershipScript = new BlueprintifyOwnershipScript();
+        ownershipScript = new BlueprintifyOwnershipScript();
         ownershipScript.runCheck();
         Global.getSector().addTransientScript(ownershipScript);
 
@@ -51,6 +51,7 @@ public class BlueprintifyModPlugin extends BaseModPlugin {
     // game state (faction known ships, player memory flags, etc.) so the debug view is fresh.
     void computeDebugAndUpdate() {
         if (Global.getSector() == null) return;
+        if (ownershipScript != null) ownershipScript.runCheck();
 
         Set<String> marketFactionIds = getMarketFactionIds();
         MemoryAPI memory = Global.getSector().getPlayerMemoryWithoutUpdate();
