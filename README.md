@@ -8,5 +8,5 @@ picks up any missing blueprints from mods that don't direclty allign their ship 
     Fighter wing and weapon blueprints also follow this same filtering system.
 
 ## Full mode
-Makes everything blueprintable, with heavy gating. Any ship you acquire will be added to the blueprint loot pool, some ships are added when you first encounter an entity faction with no markets, such as the remnant.
-    Fighter wings and weapon blueprints are immediately added to the drop pool once you encounter their specific faction in combat.
+Makes everything blueprintable, with heavy gating. Any ship you acquire will be added to the blueprint loot pool.
+    Fighter wings and weapon blueprints are immediately added to the drop pool once you acquire them for the first time.
