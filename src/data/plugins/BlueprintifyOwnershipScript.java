@@ -36,7 +36,7 @@ public class BlueprintifyOwnershipScript implements EveryFrameScript {
         if (isPaused) {
             if (!wasPaused) {
                 wasPaused = true;
-                runCheck();
+                doUpdate();
             }
             return;
         }
@@ -45,7 +45,15 @@ public class BlueprintifyOwnershipScript implements EveryFrameScript {
         elapsed += amount;
         if (elapsed < CHECK_INTERVAL) return;
         elapsed = 0f;
-        runCheck();
+        doUpdate();
+    }
+
+    private void doUpdate() {
+        if (BlueprintifyModPlugin.INSTANCE != null) {
+            BlueprintifyModPlugin.INSTANCE.computeDebugAndUpdate();
+        } else {
+            runCheck();
+        }
     }
 
     void runCheck() {
